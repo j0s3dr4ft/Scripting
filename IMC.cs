@@ -11,17 +11,31 @@ double altura = double.Parse(Console.ReadLine());
 double imc = ( masaCorporal / (altura * altura));
 Console.WriteLine("Indice de Masa Corporal: " + imc);
 
-if (imc > 25)
+if (imc > 40)
 {
-    Console.WriteLine("Sobrepeso ");
+    Console.WriteLine("Obesidad Mórbida ");
+}
+else if (imc > 35)
+{
+    Console.WriteLine("Obesidad Media ");
+}
+else if (imc > 30)
+{
+    Console.WriteLine("Obesidad Leve ");
+}
+else if (imc > 25)
+{
+    Console.WriteLine("Peso normal ");
 }
 else if (imc > 18.5) {
+
     Console.WriteLine("Peso normal ");
 }
 else if (imc < 18.5)
 {
     Console.WriteLine("Bajo de Peso");
 }
+
 
 
 
